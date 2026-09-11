@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WalkAlarm</string>
+    <string name="alarme_definido_para">Alarme definido para %1$d:%2$s</string>
 </resources>
