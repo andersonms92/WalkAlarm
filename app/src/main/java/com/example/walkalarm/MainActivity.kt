@@ -11,7 +11,6 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
-import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -34,6 +33,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -158,9 +158,10 @@ class MainActivity : ComponentActivity() {
 fun ConfigurationScreen(onScheduleAlarm: (Int, Int, Int) -> Unit) {
     val context = LocalContext.current
     var selectedTime by remember { mutableStateOf("Selecionar Hora") }
-    var hour by remember { mutableStateOf(0) }
-    var minute by remember { mutableStateOf(0) }
+    var hour by remember { mutableIntStateOf(0) }
+    var minute by remember { mutableIntStateOf(0) }
     var steps by remember { mutableStateOf("50") }
+
 
     Scaffold { padding ->
         Column(

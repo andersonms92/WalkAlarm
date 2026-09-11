@@ -3,7 +3,6 @@ package com.example.walkalarm
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import com.example.walkalarm.service.AlarmService
 
 class AlarmReceiver : BroadcastReceiver() {
