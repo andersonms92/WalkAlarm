@@ -2,7 +2,6 @@ package com.example.walkalarm
 
 import android.content.Context
 import android.content.Intent
-import com.example.walkalarm.service.AlarmService
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
@@ -10,7 +9,6 @@ import org.mockito.Mockito
 import org.mockito.Mockito.verify
 import org.mockito.Mockito.mockConstruction
 import org.mockito.MockitoAnnotations
-import org.junit.Assert.assertEquals
 
 class AlarmReceiverTest {
 
